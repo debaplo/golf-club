@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf club</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-logo-wrap">
+                    <a href="#!" class="header-logo">
+                        <img src="./icons/logo.svg" alt="logo">
+                    </a>
+                    <a href="#!" class="header-logo-descr">
+                        <img src="./img/header-logo-descr.png" alt="">
+                    </a>
+                </div>
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a href="./courses.html" class="header-list-link">Courses</a>
+                        <a href="./courses.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./offerspackage.html" class="header-list-link">Offers &amp; Packages</a>
+                        <a href="./offerspackage.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourhistory.html" class="header-list-link">Our History</a>
+                        <a href="./ourhistory.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourteam.html" class="header-list-link">Our Team</a>
+                        <a href="./ourteam.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-col">
+                    <div class="header-col-wrap">
+                        <div class="header-col-cont">
+                            <span class="header-col-span">
+                                Working hours
+                            </span>
+                            <p class="header-col-subtitle">10:00 am - 8:00 pm</p>
+                        </div>
+                        <a href="#!" class="header-btn">Book a Tee Time</a>
+                    </div>
+                    <div class="header-col-cont-1">
+                        <button class="header-btn-tl">
+                            <img src="./img/Telephone.png" alt="">
+                        </button>
+                        <button id="burger" class="burger">
+                            <img src="./img/burger.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <span class="header-span">
+                    Dornoch, Scotland
+                </span>
+                <div class="header-descr">
+                    <p>Unleash your potential on the course with every swing, where passion and performance come
+                        together</p>
+                </div>
+                <h2 class="header-title">Where Golf Meets Inspiration</h2>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+        <div class="header-main-col">
+            <div class="header-card-col-1">
+                <h3 class="header-card-title">Book a Tee Time</h3>
+                <form action="./php/add_request.php" method="POST" class="header-form">
+                    <input class="header-input" type="text" placeholder="Name" name="name">
+                    <input class="header-input number" type="number" placeholder="Phone" name="phone">
+                    <button class="header-btn-btn">Send a request</button>
+                </form>
+                <div class="header-text-main">
+                    <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                </div>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+        </div>
+        <div class="header-burger-col">
+            <ul class="header-list-1">
+                <li class="header-list-item-1">
+                    <a href="./courses.html" class="header-list-link-1">Courses</a>
+                    <button onclick="window.location.href='./courses.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./offerspackage.html" class="header-list-link-1">Offers &amp; Packages</a>
+                    <button onclick="window.location.href='./offerspackage.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourhistory.html" class="header-list-link-1">Our History</a>
+                    <button onclick="window.location.href='./ourhistory.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourteam.html" class="header-list-link-1">Our Team</a>
+                    <button onclick="window.location.href='./ourteam.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="header-col-wrap-2">
+                <div class="header-col-cont-2">
+                    <span class="header-col-span-2">
+                        Working hours
+                    </span>
+                    <p class="header-col-subtitle-2">10:00 am - 8:00 pm</p>
+                </div>
+                <a href="#!" class="header-btn-2">Book a Tee Time</a>
+            </div>
+            <div id="burger-1" class="burger-1">
+                <div class="burger-left"></div>
+                <div class="burger-right"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="golf">
+            <div class="container">
+                <div class="golf-content">
+                    <div class="golf-img">
+                        <img src="./img/golf-img.png" alt="">
+                        <div class="golf-img-descr">
+                            <p>Dornoch is an ancient small town with settlements dating back 4000 years</p>
+                        </div>
+                    </div>
+                    <div class="golf-descr">
+                        <p>Golf has been played across the world’s most northerly championship links for over four
+                            centuries. Entwined in history, <span> at Royal Dornoch the game is inseparable from the
+                                ancient Highlands town it belongs to.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more">
+            <div class="container">
+                <a href="./ourhistory.html" class="more-link">
+                    <div class="more-content">
+                        <p class="more-descr">Learn more about <br>
+                            our history</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="house">
+            <div class="container">
+                <div class="house-content">
+                    <div class="house-card-1">
+                        <h3 class="house-card-title">
+                            Golf house <br>
+                            with a rich history
+                        </h3>
+                        <div class="house-card-descr">
+                            <p>The Royal Dornoch Golf Club, located in Scotland, is considered one of the most
+                                prestigious and oldest clubs in the world. Founded in 1877, it offers a unique
+                                experience of playing in fields marked by natural beauty and rich history. </p>
+                        </div>
+                        <img src="./img/card-1.png" alt="" class="house-card-1-img">
+                    </div>
+                    <div class="house-card-2">
+                        <img class="house-card-2-img" src="./img/card-2.png" alt="">
+                        <a href="#!" class="house-card-btn">Book a Tee Time</a>
+                    </div>
+                    <div class="house-card-3">
+                        <img src="./img/card-3.png" alt="">
+                        <h3 class="house-card-title">Play where <br>
+                            nature inspires</h3>
+                        <div class="house-card-descr">
+                            <p>The Royal Dornoch field is unique in its harmony with the surrounding landscape.
+                                Located
+                                on the North Sea coast, it is known for its natural dunes, crystal clear air and
+                                stunning views.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-wrap">
+                        <h2 class="mobile-title">Discover Exellence in Golf</h2>
+                        <div class="house-content-mobile">
+                            <div class="mobile-card-wrapepr">
+                                <div class="mobile-card-1">
+                                    <img src="./img/card-mobile-1.png" alt="" class="mobile-card-img">
+                                    <p class="mobile-card-1-descr">territory</p>
+                                </div>
+                                <div class="mobile-card-2">
+                                    <img class="mobile-card-2" src="./img/card-mobile-2.png" alt="">
+                                    <p class="mobile-card-2-descr">experts</p>
+                                </div>
+                            </div>
+                            <div class="mobile-card-warpper-1">
+                                <div class="mobile-card-3">
+                                    <img src="./img/card-mobile3.png" alt="" class="mobile-card-3">
+                                    <p class="mobile-card-3-descr">equipment</p>
+                                </div>
+                                <div class="mobile-card-4">
+                                    <img src="./img/card-mobile-4.png" alt="" class="mobile-card-4">
+                                    <p class="mobile-card-4-descr">recreation area</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="lessons">
+            <div class="container">
+                <div class="lessons-content">
+                    <div class="lessons-top">
+                        <h2 class="lessons-title">Golf Lessons for Every Level</h2>
+                        <div class="lesson-top-col">
+                            <a href="./courses.html" class="lessons-link">View all courses
+                            <div class="lesson-link-arrow"></div></a>
+                        </div>
+                    </div>
+                    <div class="lessons-bottom">
+                        <picture>
+                            <img src="./img/lessons-img.jpg" alt="">
+                        </picture>
+                        <div class="lessons-descr">
+                            <p class="p">Our PGA-Qualified coaches cater for golfers of all abilities, whether you are
+                                an
+                                elite
+                                golfer or just starting out <span>. Explore our lesson offerings to find out more about
+                                    the
+                                    options we have available .</span></p>
+                            <p class="lesson-mobile-p">Our coaches cater for golfers of all abilities, whether you are
+                                an elite golfer or just starting out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top">
+            <div class="container">
+                <div class="top-content">
+                    <div class="lessons-top">
+                        <h2 class="lessons-title">Top Offers &amp;
+                            Packages</h2>
+                        <div class="lesson-top-col">
+                            <a href="./offerspackage.html" class="lessons-link">View all offers
+                            <div class="lesson-link-arrow"></div></a>
+                        </div>
+                    </div>
+                    <div class="top-bottom">
+                        <div class="top-card-col">
+                            <p class="top-card-col-span">Group Package</p>
+                            <h3 class="top-card-col-title">The Castle Course</h3>
+                        </div>
+                        <div class="card-col-top">
+                            <p class="top-card-col-span">Group Package</p>
+                            <h3 class="top-card-col-title">Jubilee Course</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="what">
+            <div class="container">
+                <div class="what-content">
+                    <h2 class="what-title">
+                        What Our Customers <br>
+                        Say About Us
+                    </h2>
+                    <div class="what-content-wrap">
+                        <div class="what-button-col">
+                            <button class="what-btn-1">
+                                <div class="what-btn-cont">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0442 18.2478C10.3658 17.9262 10.3658 17.4048 10.0441 17.0831L2.95362 9.99262L10.0344 2.91179C10.356 2.5902 10.356 2.06871 10.0343 1.74703C9.71261 1.42535 9.19113 1.42528 8.86953 1.74688L1.19864 9.41777C1.04241 9.56841 0.952964 9.77531 0.95023 9.99235C0.950097 10.2145 1.03973 10.4274 1.19879 10.5825L8.8717 18.2554C9.02602 18.4141 9.23836 18.503 9.45965 18.5015C9.68095 18.5001 9.89207 18.4085 10.0442 18.2478Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M18.8566 10.5849C19.0128 10.4342 19.1023 10.2273 19.105 10.0103C19.1069 9.78932 19.02 9.57684 18.8637 9.42058C18.7075 9.26431 18.495 9.17738 18.274 9.1793L1.78099 9.17713C1.47999 9.16646 1.19722 9.32094 1.04361 9.57996C0.889995 9.83898 0.890038 10.1612 1.04372 10.4203C1.1974 10.6794 1.48021 10.8339 1.7812 10.8233L18.282 10.8333C18.4983 10.827 18.7039 10.7381 18.8566 10.5849Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M10.6267 18.8303C11.2699 18.1871 11.2697 17.1441 10.6264 16.5008L4.11838 9.99277L10.6169 3.49425C11.2601 2.85106 11.26 1.80809 10.6166 1.16473C9.97323 0.521362 8.93026 0.521224 8.28707 1.16442L0.608415 8.84307C0.291208 9.14746 0.111918 9.56809 0.111976 10.0078C0.112034 10.4475 0.291435 10.8681 0.608721 11.1726L8.28163 18.8455C8.59327 19.1572 9.01678 19.3311 9.45747 19.3282C9.89817 19.3253 10.3193 19.146 10.6267 18.8303Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M19.439 11.1673C19.7505 10.8628 19.9267 10.446 19.9281 10.0104C19.9298 9.57118 19.7561 9.14941 19.4455 8.8388C19.1349 8.52819 18.7131 8.35446 18.2739 8.3562L1.78088 8.35403C1.17889 8.3327 0.61335 8.64166 0.306123 9.1597C-0.00110308 9.67774 -0.00101852 10.3222 0.306345 10.8404C0.613708 11.3585 1.17933 11.6676 1.78131 11.6464L18.2821 11.6564C18.7168 11.6502 19.1318 11.4748 19.439 11.1673Z"
+                                            fill="#FEFCF6" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="what-btn-2">
+                                <div class="what-btn-cont-1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.95577 18.2478C9.63417 17.9262 9.63424 17.4048 9.95592 17.0831L17.0464 9.99262L9.96556 2.91179C9.64396 2.5902 9.64403 2.06871 9.96571 1.74703C10.2874 1.42535 10.8089 1.42528 11.1305 1.74688L18.8014 9.41777C18.9576 9.56841 19.047 9.77531 19.0498 9.99235C19.0499 10.2145 18.9603 10.4274 18.8012 10.5825L11.1283 18.2554C10.974 18.4141 10.7616 18.503 10.5403 18.5015C10.319 18.5001 10.1079 18.4085 9.95577 18.2478Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M1.14341 10.5849C0.987187 10.4342 0.89774 10.2273 0.895005 10.0103C0.89308 9.78932 0.980017 9.57684 1.13628 9.42058C1.29254 9.26431 1.50503 9.17738 1.72598 9.1793L18.219 9.17713C18.52 9.16646 18.8028 9.32094 18.9564 9.57996C19.11 9.83898 19.11 10.1612 18.9563 10.4203C18.8026 10.6794 18.5198 10.8339 18.2188 10.8233L1.718 10.8333C1.50172 10.827 1.29608 10.7381 1.14341 10.5849Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M9.37331 18.8303C8.73012 18.1871 8.73025 17.1441 9.37362 16.5008L15.8816 9.99277L9.3831 3.49425C8.7399 2.85106 8.74004 1.80809 9.38341 1.16473C10.0268 0.521362 11.0697 0.521224 11.7129 1.16442L19.3916 8.84307C19.7088 9.14746 19.8881 9.56809 19.888 10.0078C19.888 10.4475 19.7086 10.8681 19.3913 11.1726L11.7184 18.8455C11.4067 19.1572 10.9832 19.3311 10.5425 19.3282C10.1018 19.3253 9.68071 19.146 9.37331 18.8303Z"
+                                            fill="#FEFCF6" />
+                                        <path
+                                            d="M0.560953 11.1673C0.249452 10.8628 0.0732601 10.446 0.0719053 10.0104C0.0701628 9.57118 0.243896 9.14941 0.554507 8.8388C0.865118 8.52819 1.28688 8.35446 1.72609 8.3562L18.2191 8.35403C18.8211 8.3327 19.3866 8.64166 19.6939 9.1597C20.0011 9.67774 20.001 10.3222 19.6937 10.8404C19.3863 11.3585 18.8207 11.6676 18.2187 11.6464L1.71789 11.6564C1.28323 11.6502 0.868166 11.4748 0.560953 11.1673Z"
+                                            fill="#FEFCF6" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="what-card-1 what-cars">
+                            <img src="./icons/quote.svg" alt="" class="what-img">
+                            <div class="what-descr">
+                                <p class="what-p">Working with your design team was an absolute pleasure. The attention
+                                    to detail
+                                    and
+                                    creativity exceeded my expectation. Thank you for making my home beautiful.</p>
+                                <p class="what-mobile-p">
+                                    Our coaches cater for golfers of all abilities, whether you are an elite golfer or
+                                    just starting out. Explore our lesson offerings to find out
+                                </p>
+                            </div>
+                            <div class="what-card-col">
+                                <img src="./img/what-card-1.png" alt="" class="what-card-img">
+                                <div class="what-card-col-cont">
+                                    <p class="what-card-col-span">Jannelina</p>
+                                    <p class="what-catrd-cont-subtitle">Alberta, USA</p>
+                                </div>
+                            </div>
+                            <div class="what-button-col-4">
+                                <button class="what-btn-1">
+                                    <div class="what-btn-cont">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0442 18.2478C10.3658 17.9262 10.3658 17.4048 10.0441 17.0831L2.95362 9.99262L10.0344 2.91179C10.356 2.5902 10.356 2.06871 10.0343 1.74703C9.71261 1.42535 9.19113 1.42528 8.86953 1.74688L1.19864 9.41777C1.04241 9.56841 0.952964 9.77531 0.95023 9.99235C0.950097 10.2145 1.03973 10.4274 1.19879 10.5825L8.8717 18.2554C9.02602 18.4141 9.23836 18.503 9.45965 18.5015C9.68095 18.5001 9.89207 18.4085 10.0442 18.2478Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M18.8566 10.5849C19.0128 10.4342 19.1023 10.2273 19.105 10.0103C19.1069 9.78932 19.02 9.57684 18.8637 9.42058C18.7075 9.26431 18.495 9.17738 18.274 9.1793L1.78099 9.17713C1.47999 9.16646 1.19722 9.32094 1.04361 9.57996C0.889995 9.83898 0.890038 10.1612 1.04372 10.4203C1.1974 10.6794 1.48021 10.8339 1.7812 10.8233L18.282 10.8333C18.4983 10.827 18.7039 10.7381 18.8566 10.5849Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M10.6267 18.8303C11.2699 18.1871 11.2697 17.1441 10.6264 16.5008L4.11838 9.99277L10.6169 3.49425C11.2601 2.85106 11.26 1.80809 10.6166 1.16473C9.97323 0.521362 8.93026 0.521224 8.28707 1.16442L0.608415 8.84307C0.291208 9.14746 0.111918 9.56809 0.111976 10.0078C0.112034 10.4475 0.291435 10.8681 0.608721 11.1726L8.28163 18.8455C8.59327 19.1572 9.01678 19.3311 9.45747 19.3282C9.89817 19.3253 10.3193 19.146 10.6267 18.8303Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M19.439 11.1673C19.7505 10.8628 19.9267 10.446 19.9281 10.0104C19.9298 9.57118 19.7561 9.14941 19.4455 8.8388C19.1349 8.52819 18.7131 8.35446 18.2739 8.3562L1.78088 8.35403C1.17889 8.3327 0.61335 8.64166 0.306123 9.1597C-0.00110308 9.67774 -0.00101852 10.3222 0.306345 10.8404C0.613708 11.3585 1.17933 11.6676 1.78131 11.6464L18.2821 11.6564C18.7168 11.6502 19.1318 11.4748 19.439 11.1673Z"
+                                                fill="#FEFCF6" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="what-btn-2">
+                                    <div class="what-btn-cont-1">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.95577 18.2478C9.63417 17.9262 9.63424 17.4048 9.95592 17.0831L17.0464 9.99262L9.96556 2.91179C9.64396 2.5902 9.64403 2.06871 9.96571 1.74703C10.2874 1.42535 10.8089 1.42528 11.1305 1.74688L18.8014 9.41777C18.9576 9.56841 19.047 9.77531 19.0498 9.99235C19.0499 10.2145 18.9603 10.4274 18.8012 10.5825L11.1283 18.2554C10.974 18.4141 10.7616 18.503 10.5403 18.5015C10.319 18.5001 10.1079 18.4085 9.95577 18.2478Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M1.14341 10.5849C0.987187 10.4342 0.89774 10.2273 0.895005 10.0103C0.89308 9.78932 0.980017 9.57684 1.13628 9.42058C1.29254 9.26431 1.50503 9.17738 1.72598 9.1793L18.219 9.17713C18.52 9.16646 18.8028 9.32094 18.9564 9.57996C19.11 9.83898 19.11 10.1612 18.9563 10.4203C18.8026 10.6794 18.5198 10.8339 18.2188 10.8233L1.718 10.8333C1.50172 10.827 1.29608 10.7381 1.14341 10.5849Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M9.37331 18.8303C8.73012 18.1871 8.73025 17.1441 9.37362 16.5008L15.8816 9.99277L9.3831 3.49425C8.7399 2.85106 8.74004 1.80809 9.38341 1.16473C10.0268 0.521362 11.0697 0.521224 11.7129 1.16442L19.3916 8.84307C19.7088 9.14746 19.8881 9.56809 19.888 10.0078C19.888 10.4475 19.7086 10.8681 19.3913 11.1726L11.7184 18.8455C11.4067 19.1572 10.9832 19.3311 10.5425 19.3282C10.1018 19.3253 9.68071 19.146 9.37331 18.8303Z"
+                                                fill="#FEFCF6" />
+                                            <path
+                                                d="M0.560953 11.1673C0.249452 10.8628 0.0732601 10.446 0.0719053 10.0104C0.0701628 9.57118 0.243896 9.14941 0.554507 8.8388C0.865118 8.52819 1.28688 8.35446 1.72609 8.3562L18.2191 8.35403C18.8211 8.3327 19.3866 8.64166 19.6939 9.1597C20.0011 9.67774 20.001 10.3222 19.6937 10.8404C19.3863 11.3585 18.8207 11.6676 18.2187 11.6464L1.71789 11.6564C1.28323 11.6502 0.868166 11.4748 0.560953 11.1673Z"
+                                                fill="#FEFCF6" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="what-card-1">
+                            <img src="./icons/quote.svg" alt="" class="what-img">
+                            <div class="what-descr">
+                                <p class="what-p">Exceptional service from the initial consultation to the final result,
+                                    your team
+                                    demonstrated professional and a keen eye for design. Highly recommended.</p>
+                            </div>
+                            <div class="what-card-col">
+                                <img src="./img/what-card-2.png" alt="" class="what-card-img">
+                                <div class="what-card-col-cont">
+                                    <p class="what-card-col-span">James</p>
+                                    <p class="what-catrd-cont-subtitle">Toronto, Canada</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="got">
+            <div class="container">
+                <div class="got-wrap">
+                    <span class="got-span">
+                        F&amp;Q
+                    </span>
+                    <div class="got-content">
+                        <h2 class="got-title">Got Questions?</h2>
+                        <div class="got-card">
+                            <span class="got-card-span">01</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">Is the golf course suitable for beginners?</h3>
+                                <h3 class="got-wrap-title-1">Courses for beginners</h3>
+                                <p class="got-wrap-descr">Yes, our golf course is beginner-friendly! We have options
+                                    for
+                                    all
+                                    skill levels, including practice areas and lessons with experienced instructors
+                                    to
+                                    help
+                                    you get started.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="got-card">
+                            <span class="got-card-span">02</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">Can I rent golf clubs?</h3>
+                                <h3 class="got-wrap-title-1">Rent golf clubs</h3>
+                                <p class="got-wrap-descr">Absolutely! We offer a variety of golf clubs for rent,
+                                    catering to players of different levels and preferences. Just let us know what you
+                                    need.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="got-card">
+                            <span class="got-card-span">03</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">Do you have a dress code?</h3>
+                                <h3 class="got-wrap-title-1">Dress code</h3>
+                                <p class="got-wrap-descr">Yes, we do. We kindly ask our guests to wear collared shirts,
+                                    golf shoes, and avoid denim. Please check our detailed dress code guidelines on-site
+                                    for more information.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="got-card">
+                            <span class="got-card-span">04</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">Are there any golf tournaments or events?</h3>
+                                <h3 class="got-wrap-title-1">Tournaments &amp; events</h3>
+                                <p class="got-wrap-descr">We regularly host tournaments and special events for players
+                                    of all levels. Visit our Events page or contact us for the latest schedule and
+                                    registration details.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="got-card">
+                            <span class="got-card-span">05</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">Do you have a restaurant or bar on-site?</h3>
+                                <h3 class="got-wrap-title-1">Restaurante &amp; bar</h3>
+                                <p class="got-wrap-descr">Yes, we have a cozy restaurant and bar where you can enjoy
+                                    delicious meals, refreshing drinks, and a relaxing atmosphere after your game.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="got-card">
+                            <span class="got-card-span">06</span>
+                            <div class="got-card-wrap">
+                                <h3 class="got-wrap-title">What is your cancellation policy?</h3>
+                                <h3 class="got-wrap-title-1">Cancellation policy</h3>
+                                <p class="got-wrap-descr">You can cancel your booking up to 24 hours in advance without
+                                    any charges. For cancellations within 24 hours, please contact us directly to
+                                    discuss your options.</p>
+                            </div>
+                            <button class="got-btn" id="toggleButton">
+                                <div class="got-btn-wrap">
+                                    <div class="got-btn-div"></div>
+                                    <div class="got-btn-div-1"></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-title">Book a Tee Time</h2>
+                <div class="footer-top-content">
+                    <div class="footer-card-1">
+                        <h3 class="footer-card-title">Leave your contacts and we’ll contact you within 12 hours</h3>
+                        <form action="./php/add_request.php" method="POST" class="footer-form">
+                            <input class="footer-input" type="text" placeholder="What is your name?">
+                            <input class="footer-input" type="email" placeholder="Email">
+                            <input class="footer-input number" type="number" placeholder="Phone number">
+                            <input class="footer-input-1" type="text" placeholder="Name">
+                            <input class="footer-input-1 number" type="number" placeholder="Phone">
+                            <button class="footer-btn">Send a request</button>
+                        </form>
+                        <div class="footer-text-main">
+                            <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                        </div>
+                    </div>
+                    <div class="footer-card-2">
+                        <img src="./img/footer-img.png" alt="" class="footer-img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-col-1">
+                    <h3 class="footer-bottom-title">ROYAL DORNOCH GOLF CLUB</h3>
+                    <p class="footer-bottom-descr">Golf Road, Dornoch, IV25 3LW</p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="tel:+4401862810219" class="footer-link">+44 (0)1862 810219</a>
+                    <a href="mailto:bookings@royaldornoch.com" class="footer-link">bookings@royaldornoch.com</a>
+                </div>
+                <div class="footer-col-3">
+                    <p class="footer-text">
+                        Политика конфиденциальности
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/form-submit.js"></script>
+    <script src="./js/what-slider.js"></script>
+    <script src="./js/index_script.js"></script>
+    <script>
+        // Этот скрипт назначит name для каждого input, если они ещё не заданы.
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('.footer-form');
+            if (form) {
+                const inputs = form.querySelectorAll('input');
+                
+                if (inputs[0] && !inputs[0].hasAttribute('name')) {
+                    inputs[0].setAttribute('name', 'footer_name');
+                }
+                if (inputs[1] && !inputs[1].hasAttribute('name')) {
+                    inputs[1].setAttribute('name', 'footer_email');
+                }
+                if (inputs[2] && !inputs[2].hasAttribute('name')) {
+                    inputs[2].setAttribute('name', 'footer_phone');
+                }
+                if (inputs[3] && !inputs[3].hasAttribute('name')) {
+                    inputs[3].setAttribute('name', 'footer_name2');
+                }
+                if (inputs[4] && !inputs[4].hasAttribute('name')) {
+                    inputs[4].setAttribute('name', 'footer_phone2');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

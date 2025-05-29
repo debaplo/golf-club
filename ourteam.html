@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf club</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/ourteam.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-logo-wrap">
+                    <a href="./index.html" class="header-logo">
+                        <img src="./icons/logo.svg" alt="logo">
+                    </a>
+                    <a href="./index.html" class="header-logo-descr">
+                        <img src="./img/header-logo-descr.png" alt="">
+                    </a>
+                </div>
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a href="./courses.html" class="header-list-link">Courses</a>
+                        <a href="./courses.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./offerspackage.html" class="header-list-link">Offers &amp; Packages</a>
+                        <a href="./offerspackage.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourhistory.html" class="header-list-link">Our History</a>
+                        <a href="./ourhistory.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourteam.html" class="header-list-link">Our Team</a>
+                        <a href="./ourteam.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-col">
+                    <div class="header-col-wrap">
+                        <div class="header-col-cont">
+                            <span class="header-col-span">
+                                Working hours
+                            </span>
+                            <p class="header-col-subtitle">10:00 am - 8:00 pm</p>
+                        </div>
+                        <a href="#!" class="header-btn">Book a Tee Time</a>
+                    </div>
+                    <div class="header-col-cont-1">
+                        <button class="header-btn-tl">
+                            <img src="./img/Telephone.png" alt="">
+                        </button>
+                        <button id="burger" class="burger">
+                            <img src="./img/burger.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-overlay"></div>
+            <div class="header-main-col">
+                <div class="header-card-col-1">
+                    <h3 class="header-card-title">Book a Tee Time</h3>
+                    <form action="./php/add_request.php" method="POST" class="header-form">
+                        <input class="header-input" type="text" placeholder="Name" name="name">
+                        <input class="header-input number" type="number" placeholder="Phone" name="phone">
+                        <button class="header-btn-btn">Send a request</button>
+                    </form>
+                    <div class="header-text-main">
+                        <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                    </div>
+                    <span id="closeModal" class="close">&times;</span>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <span class="header-span">
+                    Dornoch, Scotland
+                </span>
+                <div class="header-descr">
+                    <p>Passionate professionals, united by a love for the game, committed to crafting unforgettable
+                        experiences on every hole</p>
+                </div>
+                <h2 class="header-title">A Mastermind Behind Every Hole </h2>
+            </div>
+        </div>
+        <div class="header-burger-col">
+            <ul class="header-list-1">
+                <li class="header-list-item-1">
+                    <a href="./courses.html" class="header-list-link-1">Courses</a>
+                    <button onclick="window.location.href='./courses.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./offerspackage.html" class="header-list-link-1">Offers &amp; Packages</a>
+                    <button onclick="window.location.href='./offerspackage.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourhistory.html" class="header-list-link-1">Our History</a>
+                    <button onclick="window.location.href='./ourhistory.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourteam.html" class="header-list-link-1">Our Team</a>
+                    <button onclick="window.location.href='./ourteam.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="header-col-wrap-2">
+                <div class="header-col-cont-2">
+                    <span class="header-col-span-2">
+                        Working hours
+                    </span>
+                    <p class="header-col-subtitle-2">10:00 am - 8:00 pm</p>
+                </div>
+                <a href="#!" class="header-btn-2">Book a Tee Time</a>
+            </div>
+            <div id="burger-1" class="burger-1">
+                <div class="burger-left"></div>
+                <div class="burger-right"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="golf">
+            <div class="container">
+                <div class="golf-content">
+                    <p class="golf-span-main"> <a href="./index.html"> Homepage /</a> Our Team</p>
+                    <h2 class="golf-title">Meet Our Team</h2>
+                </div>
+            </div>
+        </section>
+        <section class="club">
+            <div class="container content">
+                <div class="content-wrap">
+                    <div class="club-top">
+                        <div class="wrap-top">
+                            <div class="club-img">
+                                <img src="./img/ourteam/card.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Gary Bethune
+                                </h3>
+                                <span class="club-top-span">
+                                    Club Captain
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-2">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-1.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Rosemary Muschamp
+                                </h3>
+                                <span class="club-top-span">
+                                    Lady Captain
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-3">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-2.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Donna Sutherland
+                                </h3>
+                                <span class="club-top-span">
+                                    Administration Assistant
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-4">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-3.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Claire Riddell
+                                </h3>
+                                <span class="club-top-span">
+                                    Assistant Manager
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-5">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-4.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Emma Stevenson
+                                </h3>
+                                <span class="club-top-span">
+                                    Administration and Golf Assistant
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-6">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-5.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Neil Hampton
+                                </h3>
+                                <span class="club-top-span">
+                                    General Manager
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-7">
+                            <div class="club-img">
+                                <img src="./img/ourteam/big-card-6.png" alt="">
+                            </div>
+                            <div class=" clup-top-col">
+                                <h3 class="club-top-title">
+                                    Andrew Skinner
+                                </h3>
+                                <span class="club-top-span">
+                                    Head PGA Professional
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-8">
+                            <div class="club-img">
+                                <img src="./img/ourteam/big-card-7.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Brad Smith
+                                </h3>
+                                <span class="club-top-span">
+                                    Retail Manager
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-top-9">
+                            <div class="club-img">
+                                <img src="./img/ourteam/bigcard-8.png" alt="">
+                            </div>
+                            <div class="clup-top-col">
+                                <h3 class="club-top-title">
+                                    Eoin Riddell
+                                </h3>
+                                <span class="club-top-span">
+                                    Course Manager
+                                </span>
+                                <p class="club-top-descr">
+                                    When the course extension is complete Old Tom, four times winner of The Open,
+                                    partnered
+                                    by
+                                    John Sutherland and Captain John Leslie, plays the course. Morris scores a near
+                                    faultless
+                                    round of 80. Of the links he declares: “There canna be better for gowf.” 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="club-bottom">
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-1.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Rosemary Muschamp</h3>
+                                <span class="card-span">
+                                    Lady Captain
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-2.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Donna Sutherland</h3>
+                                <span class="card-span">
+                                    Administration Assistant
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-3.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Claire Riddell</h3>
+                                <span class="card-span">
+                                    Assistant Manager
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-4.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Emma Stevenson</h3>
+                                <span class="card-span card-span-r">
+                                    Administration and Golf Assistant
+                                </span>
+                                <span class="card-span-1">
+                                    Golf Assistant
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-5.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Neil Hampton</h3>
+                                <span class="card-span">
+                                    General Manager
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-6.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Andrew Skinner</h3>
+                                <span class="card-span">
+                                    Head PGA Professional
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-7.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Brad Smith</h3>
+                                <span class="card-span">
+                                    Retail Manager
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-card-col">
+                                <div class="cluub-card-img">
+                                    <img src="./img/ourteam/card-8.png" alt="">
+                                    <button class="card-btn-1">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                                fill="#FFFFFD" />
+                                            <path
+                                                d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                                fill="#FFFFFD" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Eoin Riddell</h3>
+                                <span class="card-span">
+                                    Course Manager
+                                </span>
+                            </div>
+                            <button class="card-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.48053 8.51806C8.20765 8.51806 7.98643 8.29679 7.98643 8.02383V2.00738L1.97815 2.00738C1.70527 2.00738 1.48405 1.7861 1.48405 1.51315C1.48405 1.24019 1.70527 1.01892 1.97815 1.01892L8.48712 1.01892C8.61731 1.01655 8.74304 1.06638 8.83628 1.1573C8.9306 1.25151 8.98287 1.37983 8.98122 1.51315V8.02383C8.98306 8.15662 8.93069 8.28441 8.83619 8.37769C8.74169 8.47097 8.61325 8.52166 8.48053 8.51806Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.0057C1.36045 9.00807 1.23472 8.95824 1.14147 8.86732C1.04692 8.77439 0.993651 8.64736 0.993651 8.51477C0.993651 8.38217 1.04692 8.25514 1.14147 8.16222L8.13796 1.16389C8.26113 1.03166 8.44664 0.977236 8.62171 1.02196C8.79677 1.06668 8.93347 1.20341 8.97818 1.37853C9.02289 1.55364 8.96848 1.7392 8.83629 1.8624L1.8398 8.86732C1.7454 8.95643 1.62044 9.00596 1.49064 9.0057Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M8.48053 9.01229C7.93476 9.01229 7.49233 8.56974 7.49233 8.02383V2.50161L1.97815 2.50161C1.43238 2.50161 0.98995 2.05906 0.98995 1.51315C0.98995 0.967234 1.43238 0.524683 1.97815 0.524683L8.49371 0.524683C8.75743 0.519243 9.01195 0.621636 9.19847 0.808201C9.38498 0.994767 9.48735 1.24936 9.48191 1.51315V8.02383C9.48193 8.28829 9.37601 8.54172 9.18783 8.72748C8.99965 8.91324 8.74489 9.01582 8.48053 9.01229Z"
+                                        fill="#FFFFFD" />
+                                    <path
+                                        d="M1.49064 9.49994C1.2293 9.50292 0.977711 9.40083 0.792309 9.21658C0.605229 9.03098 0.5 8.77833 0.5 8.51477C0.5 8.2512 0.605229 7.99856 0.792309 7.81296L7.78879 0.814633C8.03514 0.550181 8.40616 0.441324 8.75629 0.530765C9.10642 0.620206 9.37983 0.89368 9.46924 1.2439C9.55866 1.59413 9.44983 1.96524 9.18545 2.21166L2.18897 9.21658C2.00196 9.39838 1.75142 9.50004 1.49064 9.49994Z"
+                                        fill="#FFFFFD" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-title">Book a Tee Time</h2>
+                <div class="footer-top-content">
+                    <div class="footer-card-1">
+                        <h3 class="footer-card-title">Leave your contacts and we’ll contact you within 12 hours</h3>
+                        <form action="./php/add_request.php" method="POST" class="footer-form">
+                            <input class="footer-input" type="text" placeholder="What is your name?" name="footer_name">
+                            <input class="footer-input" type="email" placeholder="Email" name="footer_email">
+                            <input class="footer-input number" type="number" placeholder="Phone number" name="footer_phone">
+                            <input class="footer-input-1" type="text" placeholder="Name" name="footer_name2">
+                            <input class="footer-input-1 number" type="number" placeholder="Phone" name="footer_phone2">
+                            <button class="footer-btn">Send a request</button>
+                        </form>
+                        <div class="footer-text-main">
+                            <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                        </div>
+                    </div>
+                    <div class="footer-card-2">
+                        <img src="./img/footer-img.png" alt="" class="footer-img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-col-1">
+                    <h3 class="footer-bottom-title">ROYAL DORNOCH GOLF CLUB</h3>
+                    <p class="footer-bottom-descr">Golf Road, Dornoch, IV25 3LW</p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="tel:+4401862810219" class="footer-link">+44 (0)1862 810219</a>
+                    <a href="mailto:bookings@royaldornoch.com" class="footer-link">bookings@royaldornoch.com</a>
+                </div>
+                <div class="footer-col-3">
+                    <p class="footer-text">Политика конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/form-submit.js"></script>
+    <script src="./js/ourteam_script4.js"></script>
+</body>
+
+</html>

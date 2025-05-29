@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf club</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/ourhistory.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-logo-wrap">
+                    <a href="./index.html" class="header-logo">
+                        <img src="./icons/logo.svg" alt="logo">
+                    </a>
+                    <a href="./index.html" class="header-logo-descr">
+                        <img src="./img/header-logo-descr.png" alt="">
+                    </a>
+                </div>
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a href="./courses.html" class="header-list-link">Courses</a>
+                        <a href="./courses.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./offerspackage.html" class="header-list-link">Offers &amp; Packages</a>
+                        <a href="./offerspackage.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourhistory.html" class="header-list-link">Our History</a>
+                        <a href="./ourhistory.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./ourteam.html" class="header-list-link">Our Team</a>
+                        <a href="./ourteam.html" class="header-btn-item-1">
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                    fill="#212125" />
+                                <path
+                                    d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                    fill="#212125" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-col">
+                    <div class="header-col-wrap">
+                        <div class="header-col-cont">
+                            <span class="header-col-span">
+                                Working hours
+                            </span>
+                            <p class="header-col-subtitle">10:00 am - 8:00 pm</p>
+                        </div>
+                        <a href="#!" class="header-btn">Book a Tee Time</a>
+                    </div>
+                    <div class="header-col-cont-1">
+                        <button class="header-btn-tl">
+                            <img src="./img/Telephone.png" alt="">
+                        </button>
+                        <button id="burger" class="burger">
+                            <img src="./img/burger.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <span class="header-span">
+                    Dornoch, Scotland
+                </span>
+                <div class="header-descr">
+                    <p>Unleash your potential on the course with every swing, where passion and performance come
+                        together</p>
+                </div>
+                <h2 class="header-title">Fairways of the Past</h2>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+        <div class="header-main-col">
+            <div class="header-card-col-1">
+                <h3 class="header-card-title">Book a Tee Time</h3>
+                <form action="./php/add_request.php" method="POST" class="header-form">
+                    <input class="header-input" type="text" placeholder="Name" name="name">
+                    <input class="header-input number" type="number" placeholder="Phone" name="phone">
+                    <button class="header-btn-btn">Send a request</button>
+                </form>
+                <div class="header-text-main">
+                    <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                </div>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+        </div>
+        <div class="header-burger-col">
+            <ul class="header-list-1">
+                <li class="header-list-item-1">
+                    <a href="./courses.html" class="header-list-link-1">Courses</a>
+                    <button onclick="window.location.href='./courses.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./offerspackage.html" class="header-list-link-1">Offers &amp; Packages</a>
+                    <button onclick="window.location.href='./offerspackage.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourhistory.html" class="header-list-link-1">Our History</a>
+                    <button onclick="window.location.href='./ourhistory.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-list-item-1">
+                    <a href="./ourteam.html" class="header-list-link-1">Our Team</a>
+                    <button onclick="window.location.href='./ourteam.html';" class="header-btn-item">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.82035 5.84537C5.63843 5.84537 5.49095 5.69786 5.49095 5.51589V1.50492L1.48544 1.50492C1.30351 1.50492 1.15603 1.3574 1.15603 1.17543C1.15603 0.99346 1.30351 0.845943 1.48544 0.845943L5.82475 0.845943C5.91154 0.844366 5.99536 0.877586 6.05752 0.9382C6.1204 1.001 6.15525 1.08656 6.15415 1.17543V5.51589C6.15538 5.60441 6.12046 5.68961 6.05746 5.75179C5.99446 5.81398 5.90883 5.84778 5.82035 5.84537Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.17047C1.07363 6.17205 0.98981 6.13883 0.927649 6.07821C0.86461 6.01626 0.829101 5.93157 0.829101 5.84318C0.829101 5.75478 0.86461 5.67009 0.927649 5.60814L5.59197 0.942593C5.67409 0.854443 5.79776 0.818157 5.91447 0.847971C6.03118 0.877784 6.12232 0.968943 6.15212 1.08568C6.18193 1.20243 6.14565 1.32613 6.05752 1.40827L1.3932 6.07821C1.33027 6.13762 1.24696 6.17064 1.16043 6.17047Z"
+                                fill="#212125" />
+                            <path
+                                d="M5.82035 6.17486C5.45651 6.17486 5.16155 5.87983 5.16155 5.51589V1.83441L1.48544 1.83441C1.12159 1.83441 0.826633 1.53937 0.826633 1.17543C0.826633 0.811489 1.12159 0.516455 1.48544 0.516455L5.82914 0.516455C6.00495 0.512828 6.17463 0.581091 6.29898 0.705468C6.42332 0.829845 6.49157 0.999573 6.48794 1.17543V5.51589C6.48796 5.69219 6.41734 5.86115 6.29189 5.98499C6.16643 6.10883 5.9966 6.17721 5.82035 6.17486Z"
+                                fill="#212125" />
+                            <path
+                                d="M1.16043 6.49996C0.986202 6.50195 0.818474 6.43389 0.694873 6.31105C0.570153 6.18732 0.5 6.01889 0.5 5.84318C0.5 5.66747 0.570153 5.49904 0.694873 5.37531L5.35919 0.709755C5.52343 0.533454 5.77077 0.460883 6.00419 0.52051C6.23762 0.580137 6.41988 0.762454 6.4795 0.995936C6.53911 1.22942 6.46656 1.47683 6.2903 1.64111L1.62598 6.31105C1.50131 6.43225 1.33428 6.50003 1.16043 6.49996Z"
+                                fill="#212125" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="header-col-wrap-2">
+                <div class="header-col-cont-2">
+                    <span class="header-col-span-2">
+                        Working hours
+                    </span>
+                    <p class="header-col-subtitle-2">10:00 am - 8:00 pm</p>
+                </div>
+                <a href="#!" class="header-btn-2">Book a Tee Time</a>
+            </div>
+            <div id="burger-1" class="burger-1">
+                <div class="burger-left"></div>
+                <div class="burger-right"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="golf">
+            <div class="container">
+                <p class="golf-span-main"> <a href="./index.html"> Homepage /</a> </span>Our History</p>
+                <div class="golf-content">
+                    <div class="golf-img">
+                        <img src="./img/ourhistory/ourhistroygolf.png" alt="">
+                        <div class="golf-img-descr">
+                            <p>Old Tom Morris was a professional Scottish golfer.</p>
+                        </div>
+                    </div>
+                    <div class="golf-descr">
+                        <p>While, in 1931, Scotland’s courts declared golf had been played on the links “since time
+                            immemorial,” the club itself was <span>founded in 1877, initially as a nine-hole course
+                                until Old
+                                Tom Morris was invited to extend the layout in 1886.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="container">
+                <div class="slide-wrap-content">
+                    <h2 class="slide-title">Timeline of Our Historic Club</h2>
+                    <div class="timeline" id="timeline">
+                        <div class="timeline-indicators">
+                            <div class="indicator" data-index="0">
+                                <span class="year">1616</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="1">
+                                <span class="year">1877</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="2">
+                                <span class="year">1883</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="3">
+                                <span class="year">1886</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="4">
+                                <span class="year">1887</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="5">
+                                <span class="year">1892</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="6">
+                                <span class="year">1893</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="7">
+                                <span class="year">1894</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="8">
+                                <span class="year">1901</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="9">
+                                <span class="year">1902</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="10">
+                                <span class="year">1904</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="11">
+                                <span class="year">1906</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="12">
+                                <span class="year">1909</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="13">
+                                <span class="year">1913</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="14">
+                                <span class="year">1920</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="15">
+                                <span class="year">1922</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="16">
+                                <span class="year">1927</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="17">
+                                <span class="year">1935</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="18">
+                                <span class="year">1937</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="19">
+                                <span class="year">1941</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="20">
+                                <span class="year">1948</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="21">
+                                <span class="year">1951</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="22">
+                                <span class="year">1956</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="23">
+                                <span class="year">1964</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="24">
+                                <span class="year">1971</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="25">
+                                <span class="year">1977</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="26">
+                                <span class="year">1980</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="27">
+                                <span class="year">1981</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="28">
+                                <span class="year">1985</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="29">
+                                <span class="year">2000</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="30">
+                                <span class="year">2014</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="31">
+                                <span class="year">2015</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="32">
+                                <span class="year">2016</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="33">
+                                <span class="year">2018</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="34">
+                                <span class="year">2022</span>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="indicator" data-index="35">
+                                <span class="year">2023</span>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-wrapper">
+                        <div id="custom-progress" class="progress-bar"></div>
+                    </div>
+                    <div class="slide-main-content">
+                        <div class="slide-wrapper">
+                            <button class="prev main-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03538 14.5984C8.29266 14.3411 8.29261 13.9239 8.03526 13.6666L2.3629 7.99421L8.02755 2.32956C8.28483 2.07228 8.28478 1.65509 8.02743 1.39775C7.77009 1.1404 7.3529 1.14035 7.09562 1.39762L0.95891 7.53434C0.83393 7.65485 0.762371 7.82037 0.760184 7.994C0.760077 8.17175 0.831786 8.34201 0.959032 8.46615L7.09736 14.6045C7.22082 14.7314 7.39069 14.8025 7.56772 14.8014C7.74476 14.8002 7.91366 14.7269 8.03538 14.5984Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M15.0853 8.46801C15.2103 8.34749 15.2818 8.18197 15.284 8.00834C15.2855 7.83158 15.216 7.66159 15.091 7.53658C14.966 7.41157 14.796 7.34202 14.6192 7.34356L1.42479 7.34182C1.18399 7.33329 0.957778 7.45688 0.834887 7.66409C0.711996 7.87131 0.71203 8.12911 0.834976 8.33636C0.957921 8.54361 1.18417 8.66725 1.42496 8.65878L14.6256 8.66673C14.7986 8.66175 14.9631 8.59063 15.0853 8.46801Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M8.50135 15.0644C9.01591 14.5498 9.0158 13.7154 8.5011 13.2007L3.29471 7.99434L8.49352 2.79552C9.00808 2.28097 9.00797 1.4466 8.49328 0.931904C7.97858 0.417212 7.14421 0.417102 6.62966 0.931658L0.486732 7.07458C0.232967 7.31809 0.089535 7.65459 0.0895811 8.00634C0.0896273 8.35808 0.233148 8.69463 0.486977 8.9382L6.62531 15.0765C6.87462 15.3259 7.21342 15.465 7.56598 15.4627C7.91853 15.4604 8.25543 15.3169 8.50135 15.0644Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M15.5512 8.93398C15.8004 8.6904 15.9414 8.35694 15.9425 8.00843C15.9439 7.65706 15.8049 7.31965 15.5564 7.07116C15.3079 6.82268 14.9705 6.68369 14.6191 6.68508L1.4247 6.68335C0.943111 6.66628 0.49068 6.91345 0.244899 7.32788C-0.000882071 7.74231 -0.000814921 8.25792 0.245076 8.67241C0.490967 9.08691 0.943462 9.3342 1.42505 9.31726L14.6257 9.32521C14.9734 9.32031 15.3055 9.17994 15.5512 8.93398Z"
+                                        fill="#FDFCF8" />
+                                </svg>
+                            </button>
+                            <div class="slides-wrapper">
+                                <div class="slides">
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-1.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1616
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span> Earliest written evidence of golf in Dornoch when Privy
+                                                        Councillor
+                                                        Sir
+                                                        Robert Gordon of Sutherland, tutor to his nephew the 13th Earl
+                                                        of
+                                                        Sutherland, submits an expense account for ‘’My Lord’s Golf
+                                                        Clubs
+                                                        and
+                                                        Golf
+                                                        Balls’
+                                                    </span>
+                                                    <span>
+                                                        ‘Item ten poundis guven this yeir for bowes, arrowes, golff
+                                                        clubbes,
+                                                        and
+                                                        balls, with other necessars for his L[ordship’s] exercise.’ 
+                                                    </span>
+                                                    <span>
+                                                        In 1630 Sir Robert made the observation ‘About this toun, along
+                                                        the
+                                                        sea
+                                                        road, ther are the fairest and lairgest links of any pairt of
+                                                        Scotland...’
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-2.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1877
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span> 9 holes of golf are laid down on dunes land. Dornoch Town
+                                                        Council gives permission for the Sutherland Golfing Society to
+                                                        play golf on Dornoch links. 
+                                                    </span>
+                                                    <span>
+                                                        Citizens of the Royal Burgh of Dornoch and its founding fathers,
+                                                        Alexander McHardy and Dr. John Gunn, meet to form the Dornoch
+                                                        Golf
+                                                        Club.
+                                                         
+                                                    </span>
+                                                    <span>
+                                                        Alex McHardy becomes the first secretary of Dornoch Golf Club.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-3.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1883
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        A club member from 1881, at the tender age of 19, John
+                                                        Sutherland is appointed Dornoch Club Secretary and goes on to
+                                                        become the most influential figure in the history of the Club. 
+                                                    </span>
+                                                    <span>
+                                                        Sutherland’s ambition over the next 20 years is to develop and
+                                                        achieve a first-class golf course on the links. 
+                                                    </span>
+                                                    <span>
+                                                        A journalist, Town Clerk, scratch golfer, founder member of
+                                                        Scottish golf administration and a course designer, Sutherland
+                                                        serves the Club, and the Highlands, for the next 58 years.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-4.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1886
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Veteran champion and the “Grand Old Man of Golf,” Old Tom
+                                                        Morris, visits Dornoch, surveys the links and lays out a more
+                                                        developed golf course of 18 holes measuring 5285 yards on the
+                                                        Common Good land of the Royal Burgh.  
+                                                    </span>
+                                                    <span>
+                                                        When the course extension is complete Old Tom, four times winner
+                                                        of The Open, partnered by John Sutherland and Captain John
+                                                        Leslie, plays the course. Morris scores a near faultless round
+                                                        of 80. Of the links he declares: “There canna be better for
+                                                        gowf.” 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-5.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1887
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        John Leslie, later the first Captain of the Dornoch Golf Club
+                                                        applies on behalf of the Sutherland Golfing Society, to lease
+                                                        ground on the links to build a Golf House. A modest three roomed
+                                                        wooden structure with a corrugated iron roof, it serves the Club
+                                                        well for the next 22 years.  
+                                                    </span>
+                                                    <span>
+                                                        Club members and caddies gather outside the new Golf House.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-6.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1892
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        At the Annual General Meeting of 1891, members agree to extend
+                                                        the Course, mostly on the Lower Links. Eight holes on the 1892
+                                                        map are still visible today: the 3rd and 4th and the 12th
+                                                        through to the 17th. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-7.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1893
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        A graphic illustration by Lancelot Speed entitled ‘The Golf
+                                                        Tournament at Dornoch, Sutherlandshire’, published in The
+                                                        Illustrated Sporting and Dramatic News, September 9, 1893. It
+                                                        features among others, John Sutherland, winner of the Silver
+                                                        Medal five years in succession and Captain Leslie. In the
+                                                        distance is the Club-house and a view of the Dornoch Castle and
+                                                        Cathedral.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-8.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1894
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        He serves as Dornoch’s “keeper of the greens” and the Club’s
+                                                        first Professional from 1893-1898. In 1899 he emigrates to the
+                                                        USA becoming one of the greats of golf course architecture. A
+                                                        prolific golf course designer of over 400 courses predominantly
+                                                        in North America, Donald is heavily influenced by the topography
+                                                        of his hometown course. Donald is followed to the US by his
+                                                        younger brother Alec  who wins the US Open in 1907 – a feat his
+                                                        older brother is unable to match.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-9.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1901
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Andrew Carnegie of Skibo Castle presents the splendid silver
+                                                        shield to Dornoch Golf Club.  
+                                                    </span>
+                                                    <span>
+                                                        Finely crafted by Glasgow firm James Weir and Co for the sum of
+                                                        £120 the Carnegie Shield is the Club’s most prestigious trophy.
+                                                        In addition to local landmarks, the Shield’s splendid
+                                                        iconography reflects the Club’s close ties to the United States
+                                                        which endures to this day. Its allure remains as potent as ever,
+                                                        attracting amateur golfers from far and wide to Dornoch. It is
+                                                        played for annually during Tournament Week in August.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-10.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1902
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The Northern Counties Cup is first played for in 1900. Dornoch
+                                                        does not play until 1902 and then over the next decade,
+                                                        establishes Dornoch as a venue for excellent golf and golfers.
+                                                        Dornoch’s elite players including John Sutherland, Thomas Grant,
+                                                        Walter Matheson and Donald Grant win the trophy for an
+                                                        astonishing 10 consecutive years.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-11.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1904
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        JH Taylor, 5 times Open winner, spends his summer holidays in
+                                                        Dornoch from 1904 until 1907. He advises John Sutherland, Club
+                                                        Secretary, on the design of the Course extension. A few years
+                                                        later he wrote…’the finest test of golfing capacity is the one
+                                                        that presents to the player a variety of strokes, and according
+                                                        to my ideas, Dornoch Links fulfils these ideas.’
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-12.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1906
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        A crowd of around 1000 descends on the links to watch an
+                                                        exhibition match featuring the 1906 Open champion James Braid
+                                                        and another legend, Harry Vardon. The finest golfers of their
+                                                        era, they are hailed as “The Great Triumvirate,” along with
+                                                        regular Dornoch summer visitor John Henry “JH” Taylor.
+                                                    </span>
+                                                    <span>
+                                                        Vardon, a record six-time Open champion, later writes to the
+                                                        club, stating: “You have indeed got a fine course up there at
+                                                        Dornoch. I should think it is the best in Scotland.”
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-13.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1909
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Dornoch is prospering. Accessibility due to the Dornoch Light
+                                                        Railway, means summer visitors, especially Londoners, can arrive
+                                                        from King’s Cross in 24 hours! Substantial houses and hotels are
+                                                        being built. 
+                                                    </span>
+                                                    <span>
+                                                        An impressive new clubhouse opens at Royal Dornoch. Among the
+                                                        luminaries at the official opening are Andrew Carnegie, of Skibo
+                                                        Castle, and his wife Louise.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-14.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1913
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Captain Ryle and John Sutherland escort a suffragette protester
+                                                        off the course. Not for the first time has Prime Minister
+                                                        Asquith been accosted at Royal Dornoch. The previous year while
+                                                        playing with Home Secretary McKenna, two suffragettes assaulted
+                                                        the PM.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-15.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1920
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Hailing from Surrey, the Wethered and Holderness families for
+                                                        many years, spend their summer holidays in Dornoch. Joyce
+                                                        Wethered wins the British Open Ladies Championship 4 times, is 5
+                                                        times winner of the Royal Dornoch Ladies’ Silver Medal. 
+                                                    </span>
+                                                    <span>
+                                                        Brother Roger becomes the British Amateur Champion in 1923 and
+                                                        is a runner up in the 1921 Open. He wins the Royal Dornoch
+                                                        Silver Medal 3 times and also the Carnegie Shield in 1921.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-16.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1922
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Son of Dornoch and one-time club caddie, Bob MacDonald wins the
+                                                        first ever Texas Open.
+                                                    </span>
+                                                    <span>
+                                                        Bob goes on to rub shoulders with Bobby Jones and is a noted
+                                                        tutor of Babe Zaharias and Gene Sarazen. 
+                                                    </span>
+                                                    <span>
+                                                        One of the longest drivers of the day, Bob endorses his own line
+                                                        of clubs, pens ‘Golf’ his best-selling golf tuition manual and
+                                                        tutors the stars of the day including Douglas Fairbanks, Mary
+                                                        Pickford, Bing Crosby and Bob Hope. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-17.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1927
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        While back in Dornoch from the USA for a summer holiday in 1921,
+                                                        Donald Ross is approached by the Club to advise on “radical’
+                                                        improvements to the first and second holes.  However, it is not
+                                                        until 1927 that most of Ross’s designs are approved by the
+                                                        membership and it takes another year before the holes are
+                                                        completed. The 2nd becomes one of the most iconic par 3 holes in
+                                                        golf. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-18.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1935
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The Northern Open Championship, or the Northern Open Amateur and
+                                                        Professional Tournament as it was then called, is hosted by
+                                                        Royal Dornoch for the first time.
+                                                    </span>
+                                                    <span>
+                                                        The Town Council contributes £5 towards the costs. Dick Walker
+                                                        of Cruden Bay takes the honours after an 18-hole play-off win
+                                                        over Willie Park of Lanark.  They had been tied on 298 after
+                                                        four rounds. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-19.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1937
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch hosts the South African touring team of
+                                                        outstanding amateurs, which includes Bobby Locke, regarded as
+                                                        one of the greatest golfers of all time, winning the Open
+                                                        Championship four times.  
+                                                    </span>
+                                                    <span>
+                                                        Playing against the home team, Locke on the left, putts out on
+                                                        13th hole, now the 1st on the Struie course. The home team which
+                                                        included J S (Kernie) Macrae, emerges victorious!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-20.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1941
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        World War Two bombers are stationed at Dornoch. The entirety of
+                                                        the Ladies course on the lower links, three holes on the
+                                                        Championship Course and the clubhouse are requisitioned by the
+                                                        Air Ministry for the duration of the war.  
+                                                    </span>
+                                                    <span>
+                                                        The landing ground is decommissioned in 1945. 
+                                                    </span>
+                                                    <span>
+                                                        Compensation for the loss of the courses and clubhouse is
+                                                        finally settled in January 1950. The delay in payment poses a
+                                                        serious financial threat to the Club’s existence. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-21.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1948
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The Championship Course is extended. George Duncan, the 1920
+                                                        Open champion, advises on the lay-out of two new holes towards
+                                                        Embo. However, it is generally believed today that the design of
+                                                        the the 7th and 8th holes was originally mooted by Dornoch’s
+                                                        head greenkeeper and professional, Robbie Grant. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-22.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1951
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The first Lady Captain at Royal Dornoch is appointed. Mrs Betty
+                                                        McCulloch (aka Mrs Betty Mackay and Mrs. Betty Booker Milburn)
+                                                        is Dornoch’s outstanding post war lady golfer. Winner of 14
+                                                        Ladies Silver Medals (1933, 36, 38, and 51 to 61) Betty is a
+                                                        semi-finalist in the 1956 Scottish Ladies’ Championship.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-23.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1956
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The Scottish Ladies’ Championship is played at Royal Dornoch for
+                                                        the first time. Jessie Valentine wins the Championship for the
+                                                        sixth time. Jessie dominates women’s golf for 20 years from the
+                                                        1930’s through to the 1950’s, winning the British Ladies Amateur
+                                                        three times. 
+                                                    </span>
+                                                    <span>
+                                                        Royal Dornoch hosts the Scottish Ladies Championship again in
+                                                        1962, 1971, 1977, 1984 and 1996. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-24.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1964
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Herbert Warren Wind pens for the June issue of the New Yorker
+                                                        magazine ‘North to the Links of Dornoch’ which proves to be
+                                                        hugely influential in raising the profile of Royal Dornoch in
+                                                        the USA. 
+                                                    </span>
+                                                    <span>
+                                                        While noting the then challenges involved in journeying to the
+                                                        Highlands, he observes: “This same remoteness explains the
+                                                        unique position that Dornoch has long held in golf; for over
+                                                        half a century it has been regarded as one of the outstanding
+                                                        courses in the world by men close to the heart of the game, yet
+                                                        very few have ever played it.” 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-25.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1971
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        World famous singer, actor and avid golfer, Bing Crosby arrives
+                                                        at Royal Dornoch. The American star is regarded as one of the
+                                                        icons of 20th Century culture, with more than 1600 recordings
+                                                        and 70-plus films.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-26.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1977
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The Club celebrates its Centenary, with a grand dinner held at
+                                                        the Burghfield House Hotel attended by guests including the
+                                                        Captain of The R&A and the president of the Scottish Golf
+                                                        Union. 
+                                                    </span>
+                                                    <span>
+                                                        The anniversary is marked with a flurry of Scottish
+                                                        championships including the Scottish Ladies’ Championship, the
+                                                        Northern Open, the North District of the Scottish Golf Union
+                                                        Championship, the Northern Counties Cup and the Sutherland
+                                                        County Championship.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-27.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1980
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        A landmark year as Royal Dornoch hosts The R&A Home
+                                                        Internationals for the first time, with England emerging
+                                                        victorious.
+                                                    </span>
+                                                    <span>
+                                                        It is a source of immense pride for the golf club. The event
+                                                        dates to 1932 at Troon and other previous Scottish hosts have
+                                                        included Prestwick, Muirfield, Turnberry, Carnoustie and
+                                                        Gullane. 
+                                                    </span>
+                                                    <span>
+                                                        The calibre of golfer taking to the links is impressive, with
+                                                        Irish duo Ronan Rafferty and Philip Walton among those going on
+                                                        to make their mark in the professional ranks.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-28.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1981
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Ben Crenshaw, the two times Masters Champion, makes the journey
+                                                        to Royal Dornoch with club member Mark McCormack of IMG. When
+                                                        asked if he enjoyed his trip, famously Ben tells the secretary
+                                                        of The R&A that he almost didn’t come back! 
+                                                    </span>
+                                                    <span>
+                                                        Another multiple Majors winner, Tom Watson arrives 1981, the
+                                                        year after winning at Muirfield – the third of five Open
+                                                        Championships. He intends to play 18 holes with Sandy Tatum,
+                                                        former president of the USGA, but enjoys a further two rounds.”
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-29.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                1985
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch successfully hosts the 100th Amateur Championship,
+                                                        justifying the R&A’s decision to bring the high-profile event to
+                                                        the Highlands for the first time. The Amateur and the US Amateur
+                                                        are the foremost amateur tournaments in golf. 288 elite golfers
+                                                        from around the globe converge on Dornoch.  
+                                                    </span>
+                                                    <span>
+                                                        Irishman Garth McGimpsey posts an 8 & 7, 36-hole final win over
+                                                        Englishman Graham Homewood. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-30.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2000
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        American President Bill Clinton is royally welcomed to Royal
+                                                        Dornoch. A keen golfer, he wanted to add the Championship Course
+                                                        to his list. 
+                                                    </span>
+                                                    <span>
+                                                        After their round, pro Andrew Skinner confirms that President
+                                                        Clinton has been persuaded by the Junior Convenor to hand out
+                                                        prizes to the youngsters. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-31.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2014
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch has welcomed an array of Major winners down the
+                                                        years but The Golden Bear, Jack Nicklaus himself, creates quite
+                                                        a stir.  
+                                                    </span>
+                                                    <span>
+                                                        Pros Andrew Skinner and Gary Dingwall have been requested to
+                                                        keep their lips sealed before Jack’s low-key arrival but word
+                                                        quickly gets out in the town and the gallery grows with each
+                                                        passing hole.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-32.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2015
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch Golf Club hosts the R&A’s under 18 amateur boys’
+                                                        team competition, the Jacques Leglise Trophy which features
+                                                        elite golfers from Great Britain & Ireland and the Continent of
+                                                        Europe. A young Viktor Hovland plays for Continental Europe.
+                                                        Past top golfers include Luke Donald and Sergio Garcia. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-33.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2016
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch Golf Club and the Royal Burgh of Dornoch celebrate
+                                                        400 years of golf being played on the links from 1616. 
+                                                    </span>
+                                                    <span>
+                                                        Amongst a year-long calendar of events, Royal golf clubs from
+                                                        around the world converge on Dornoch to celebrate the occasion. 
+                                                    </span>
+                                                    <span>
+                                                        A time capsule, to be opened in 100 years’ time is buried under
+                                                        the path from the 18th green following the traditional New
+                                                        Year’s Day match “East o’ the Burn v West o’ the Burn”. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-34.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2018
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        Royal Dornoch members vote in favour of building a new
+                                                        clubhouse, but plans drawn-up for the project are forced to go
+                                                        on hold due to the wide ranging impact of 2020 global pandemic. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-35.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2022
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The R&A host the International Women’s and Men’s Senior Amateur
+                                                        Championships to run concurrently for the first time over both
+                                                        courses at Royal Dornoch Golf Club. Elite amateurs from around
+                                                        the world arrive in Dornoch in an historic first. Mike McCoy and
+                                                        Terrill Samuel are eventual winners in a week in which wild
+                                                        weather dominates play. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-card">
+                                        <div class="slide-card-img">
+                                            <img src="./img/ourhistory/card-36.png" alt="">
+                                        </div>
+                                        <div class="slide-card-col">
+                                            <h3 class="slide-card-title">
+                                                2023
+                                            </h3>
+                                            <div class="slide-card-descr">
+                                                <p>
+                                                    <span>
+                                                        The R&A Vagliano Women’s Amateur International Trophy & the
+                                                        Junior Vagliano Trophy. 
+                                                    </span>
+                                                    <span>
+                                                        Playing at Dornoch for the first time, the Europeans dominated,
+                                                        winning the Vagliano Trophy and retaining the Junior Vagliano
+                                                        Trophy. 
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="next main-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.96462 14.5984C7.70734 14.3411 7.70739 13.9239 7.96474 13.6666L13.6371 7.99422L7.97245 2.32956C7.71517 2.07228 7.71522 1.65509 7.97257 1.39775C8.22991 1.1404 8.6471 1.14035 8.90438 1.39762L15.0411 7.53434C15.1661 7.65485 15.2376 7.82037 15.2398 7.994C15.2399 8.17175 15.1682 8.34201 15.041 8.46615L8.90264 14.6045C8.77918 14.7314 8.60932 14.8025 8.43228 14.8014C8.25524 14.8002 8.08635 14.7269 7.96462 14.5984Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M0.914729 8.46801C0.78975 8.34749 0.718192 8.18197 0.716004 8.00834C0.714464 7.83158 0.784014 7.66159 0.909024 7.53658C1.03404 7.41157 1.20402 7.34202 1.38078 7.34356L14.5752 7.34182C14.816 7.33329 15.0422 7.45688 15.1651 7.66409C15.288 7.87131 15.288 8.12911 15.165 8.33636C15.0421 8.54361 14.8158 8.66725 14.575 8.65878L1.3744 8.66673C1.20138 8.66175 1.03687 8.59063 0.914729 8.46801Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M7.49865 15.0644C6.98409 14.5498 6.9842 13.7154 7.4989 13.2007L12.7053 7.99434L7.50648 2.79552C6.99192 2.28097 6.99203 1.4466 7.50672 0.931904C8.02142 0.417212 8.85579 0.417102 9.37034 0.931658L15.5133 7.07458C15.767 7.31809 15.9105 7.65459 15.9104 8.00634C15.9104 8.35808 15.7669 8.69463 15.513 8.9382L9.37469 15.0765C9.12538 15.3259 8.78658 15.465 8.43402 15.4627C8.08147 15.4604 7.74457 15.3169 7.49865 15.0644Z"
+                                        fill="#FDFCF8" />
+                                    <path
+                                        d="M0.448763 8.93398C0.199562 8.6904 0.0586085 8.35694 0.0575247 8.00843C0.0561301 7.65706 0.195117 7.31965 0.443606 7.07116C0.692094 6.82268 1.0295 6.68369 1.38087 6.68508L14.5753 6.68335C15.0569 6.66628 15.5093 6.91345 15.7551 7.32788C16.0009 7.74232 16.0008 8.25792 15.7549 8.67241C15.509 9.08691 15.0565 9.3342 14.575 9.31726L1.37431 9.32521C1.02659 9.32031 0.694533 9.17994 0.448763 8.93398Z"
+                                        fill="#FDFCF8" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-title">Book a Tee Time</h2>
+                <div class="footer-top-content">
+                    <div class="footer-card-1">
+                        <h3 class="footer-card-title">Leave your contacts and we’ll contact you within 12 hours</h3>
+                        <form action="./php/add_request.php" method="POST" class="footer-form">
+                            <input class="footer-input" type="text" placeholder="What is your name?" name="footer_name">
+                            <input class="footer-input" type="email" placeholder="Email" name="footer_email">
+                            <input class="footer-input number" type="number" placeholder="Phone number" name="footer_phone">
+                            <input class="footer-input-1" type="text" placeholder="Name" name="footer_name2">
+                            <input class="footer-input-1 number" type="number" placeholder="Phone" name="footer_phone2">
+                            <button class="footer-btn">Send a request</button>
+                        </form>
+                        <div class="footer-text-main">
+                            <p>Leave your contacts and we’ll contact you within 12 hours</p>
+                        </div>
+                    </div>
+                    <div class="footer-card-2">
+                        <img src="./img/footer-img.png" alt="" class="footer-img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-col-1">
+                    <h3 class="footer-bottom-title">ROYAL DORNOCH GOLF CLUB</h3>
+                    <p class="footer-bottom-descr">Golf Road, Dornoch, IV25 3LW</p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="tel:+4401862810219" class="footer-link">+44 (0)1862 810219</a>
+                    <a href="mailto:bookings@royaldornoch.com" class="footer-link">bookings@royaldornoch.com</a>
+                </div>
+                <div class="footer-col-3">
+                    <p class="footer-text">
+                        Политика конфиденциальности
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/form-submit.js"></script>
+    <script src="./js/ourhistory_script1.js"></script>
+</body>
+
+</html>
